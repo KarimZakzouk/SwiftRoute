@@ -77,6 +77,23 @@ Follow these steps to set up and run SwiftRoute using Docker Compose:
    - Backend API (for testing): `http://localhost:6969`.
    - PostgreSQL: Running on `localhost:5432` (credentials defined in `docker-compose.yml`).
 
+5. **Stop the Application**
+
+   - If running docker compose up in the terminal, press Ctrl + C to stop the containers gracefully.
+   - Alternatively, from the project directory (~/SwiftRoute), run:
+     ```bash
+     docker compose down
+     ```
+   - This stops and removes the frontend, backend, and db containers defined in docker-compose.yml.
+
+6. **Remove Stopped Containers (Optional)**
+
+   - To clean up all stopped containers:
+     ```bash
+    docker container prune
+     ```
+   - Confirm with y when prompted.
+
 ## 🐞 Troubleshooting
 - If the frontend fails with `react-scripts: not found`, ensure `frontend/package.json` includes `"react-scripts": "^5.0.1"` and the `frontend/Dockerfile` has `RUN npm install`.
 - If the backend fails with `Cannot find module 'express'`, verify `backend/package.json` includes `"express": "^4.18.2"` and the `backend/Dockerfile` has `RUN npm install`.
