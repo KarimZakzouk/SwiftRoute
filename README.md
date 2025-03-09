@@ -1,6 +1,3 @@
-### Updated README.md for SwiftRoute
-
-```markdown
 # 🚍 SwiftRoute: Your Smart Transportation Solution
 
 SwiftRoute is a full-stack web application designed to simplify transportation challenges for users, drivers, and station managers. Whether you're finding the best route, booking a trip, or checking trip availability at stations, SwiftRoute has you covered! (●’◡’●)
