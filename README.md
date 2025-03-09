@@ -102,6 +102,3 @@ Follow these steps to set up and run SwiftRoute using Docker Compose:
 ---
 
 SwiftRoute: Solving transportation issues, one trip at a time! 🌍
-```
-
----
