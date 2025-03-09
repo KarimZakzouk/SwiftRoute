@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+.Nav {
+  background: rebeccapurple;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 5 px;
+  padding: 3 px;
+}
+
+.Nav ul {
+  padding: 0px;
+  margin: 1%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Nav a {
+  color: inherit;
+  text-decoration: none;
+  margin: 5px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.Nav li.active {
+  background-color: rgb(0, 0, 0);
+
+}
+
+.Nav li:hover {
+  background-color: rgb(110, 197, 10);
+
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  padding: 12px 24px;
+  background-color: #af4c4c;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(72, 133, 237, 0.6);
+}
+
+
+.button:active {
+  background-color: #3e8e41;
+  transform: scale(1);
+}
+
+.signup {
+  background-color: #2196f3;
+}
+
+.signup:hover {
+  background-color: #0b7dda;
+}
+
+.signup:active {
+  background-color: #0b7dda;
+}
+
+.da {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px
+}
+
+.Login {
+  height: 100vh;
+  width: 100vw;
+  background: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0px;
+}
+
+.Login button {
+  margin: 10px
+}
+
+.Login_box {
+  background: #f0e3e3;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+}
+
+
+.Login_box label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.Login_box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+  text-align: left;
+}
+/**/
+.DriversList {
+  height: 100vh;
+  /* Full height of the viewport */
+  width: 100vw;
+  /* Full width of the viewport */
+
+  justify-content: center;
+
+}
+
+.List button {
+  display: flex;
+  /* Enable flexbox */
+  flex-direction: column;
+  /* Stack items vertically */
+  align-items: center;
+  /* Center items horizontally */
+  justify-content: center;
+  margin: 1%;
+}
+
+.alink {
+
+  color: inherit;
+  text-decoration: none;
+  margin: 0px;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.alink:hover {
+
+  background-color: #45a049;
+  transform: scale(1.05);
+
+}
+
+
+.Addtrip {
+  height: 100vh;
+  width: 100vw;
+  background: #000000;
+  align-items: center;
+
+  margin: 0px;
+
+}
+
+.Addtrip_box {
+  background: #07dbbf;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  padding: 100px;
+  margin-left: 50px;
+  margin-top: 0;
+  text-align: center;
+  display: block;
+}
+
+
+.Addtrip_box label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin: 5px;
+}
+
+.Addtrip_box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.site_Title {
+  color: white;
+  font-size: 25px;
+  background-color: #000000;
+  margin: 0;
+  padding: 2%;
+}
+
+.buttonlink {
+  color: inherit;
+  text-decoration: none;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.NavA {
+  background: rgb(51, 78, 153);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 5 px;
+  padding: 3 px;
+}
+
+.NavA ul {
+  padding: 0px;
+  margin: 1%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.NavA a {
+  color: inherit;
+  text-decoration: none;
+  margin: 5px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.NavA li.active {
+  background-color: rgb(0, 0, 0);
+
+}
+
+.NavA li:hover {
+  background-color: rgb(110, 197, 10);
+
+}
+
+/* Container for ComboBox */
+.combobox-container {
+  
+  margin-top: 0;
+ 
+}
+
+/* Label Styling */
+.combobox-container label {
+  align-items: left;
+  display: flex;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* ComboBox Styling */
+.styled-combobox {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus State */
+.styled-combobox:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  background: #fff;
+}
+
+/* Disabled State */
+.styled-combobox:disabled {
+  background: #e9ecef;
+  cursor: not-allowed;
+  color: #999;
+}
+
+/* Dropdown Arrow */
+.styled-combobox::-ms-expand {
+  display: none;
+}
+.styled-combobox {
+  appearance: none; /* Removes default arrow */
+  background: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23000' d='M2 0L0 2h4z'/%3E%3C/svg%3E")
+    no-repeat right 10px center;
+  background-size: 10px;
+}
+
+/* Options Styling */
+.styled-combobox option {
+  padding: 10px;
+  background: #fff;
+  color: #555;
+}

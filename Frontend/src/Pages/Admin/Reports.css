@@ -1,0 +1,85 @@
+/* Make the body and html elements take up the full height of the viewport */
+
+/* Full height container */
+#report-container {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Make it take full viewport height */
+  padding: 2rem;
+  background-color: #f8f9fa; /* Light background for the full page */
+  width: 100%;
+}
+
+/* Title Styling */
+#report-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff; /* Primary color */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Chart container styling */
+#chart-container {
+  width: 100%;
+  max-width: 1000px; /* Limit the max-width for the chart */
+  margin-bottom: 3rem; /* Space between chart and most frequent station */
+  background-color: #ffffff; /* White background for chart */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 500px; /* Set a fixed height for the chart */
+}
+
+/* Loading message styling */
+#loading-message {
+  font-size: 1.5rem;
+  color: #6c757d; /* Grey color for loading message */
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Frequent Station Section */
+#frequent-station {
+  background-color: #ffffff; /* White background for the section */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+#frequent-station-title {
+  color: #17a2b8; /* Info color */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#frequent-station p {
+  font-size: 1.2rem;
+  color: #495057;
+  font-weight: 500;
+}
+
+/* Styling for chart legend */
+.chartjs-legend {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Ensure full height of the page is used */
+#report-container > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 0;
+}
+.container {
+  margin-top: 0;
+}

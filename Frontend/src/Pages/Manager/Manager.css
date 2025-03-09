@@ -1,0 +1,123 @@
+#home-page-container {
+    background-color: #f4f7f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #profile-container {
+    background: linear-gradient(135deg, #6e7dff, #7367f0);
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  #loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #loading-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #manager-greeting {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  
+  #verification-status {
+    margin-bottom: 20px;
+  }
+  
+  #verification-status-not-verified {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: 600;
+  }
+  
+  #verification-status-verified {
+    font-size: 18px;
+    color: #2ecc71;
+    font-weight: 600;
+  }
+  
+  #profile-info {
+    margin-top: 20px;
+  }
+  
+  #station-info,
+  #trips-source,
+  #trips-destination {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  #rating-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #star-ratings-wrapper {
+    display: inline-flex;
+    justify-content: center;
+  }
+  
+  #average-rating-value {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  #footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    #profile-container {
+      padding: 20px;
+    }
+  
+    #manager-greeting {
+      font-size: 24px;
+    }
+  
+    #loading-message {
+      font-size: 18px;
+    }
+  }
+  #location-station{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    #station-street,#station-zipcod,#station-governorate,#station-name
+    {
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 10px;
+    }

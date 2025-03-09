@@ -1,0 +1,164 @@
+/* Universal Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    background-color: #f4f4f4;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Ensure full viewport height */
+    font-family: Arial, sans-serif;
+}
+
+/* Register Page Layout */
+#RegisterPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    box-sizing: border-box;
+    height: auto;
+}
+
+/* Register Box Styling */
+#Register_box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Logo Styling */
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+    filter: invert(1);
+}
+
+/* Header Styling */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input Container */
+.input-container {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+/* Input and Select Styling */
+.input-container input,
+.input-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 0;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* Select Box Styling */
+.input-container select {
+    margin: 10px;
+    background-color: #f9f9f9;
+
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Submit Button Styling */
+.submit-button-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit-button-container button:hover {
+    background-color: #45a049;
+}
+
+/* Car Details Section */
+.carDetails {
+    margin: auto;
+    padding: 0;
+}
+
+/* Car Details Title */
+.carDetails h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Car Details Input */
+.carDetails input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Car Details Label */
+.carDetails label {
+    font-size: 14px;
+    color: #555;
+    margin-left: 5px;
+}
+
+/* Checkbox Styling */
+.carDetails input[type="checkbox"] {
+    width: auto;
+    margin: 0 5px 0 0;
+}
+
+/* Station Details Section */
+.stationDetails {
+    margin: auto;
+    padding: 0;
+}
+
+/* Station Details Title */
+.stationDetails h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Station Details Input */
+.stationDetails input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

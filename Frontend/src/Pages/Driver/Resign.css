@@ -1,0 +1,49 @@
+.buttonn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border-bottom: 2 px solid black;
+  box-shadow: 0px 5px 7px;
+  align-self: center;
+  justify-self: center;
+  margin: 10px;
+  width: 150px;
+  height: 30px;
+}
+.buttonn:hover {
+  transform: translateY(3px);
+  cursor: pointer;
+  box-shadow: 0px 5px 4px 0px cornflowerblue;
+
+  background-color: rgb(91, 124, 203);
+  transition: background-color 1000ms ease;
+}
+.popup-content {
+  margin: auto;
+  /* background: #fff; */
+  /* width: 50%;
+    padding: 5px; */
+  /* border: 1px solid #d7d7d7; */
+  position: sticky;
+}
+
+.popUpp {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  border-radius: 30px;
+  border-bottom: 2 px solid black;
+  box-shadow: 0px 5px 7px;
+  width: 300px;
+  height: 300px;
+  background-color: #34495e;
+  
+}
+
+.reasonfont {
+  text-decoration: none;
+  color: #ecf0f1;
+  padding: 5px;
+}

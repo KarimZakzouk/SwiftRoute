@@ -1,0 +1,88 @@
+.animated-button-cancel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: white; /* Change text color to white for better contrast */
+    box-shadow: 0 0 0 2px red; /* Change shadow color to red */
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button-cancel svg {
+    position: absolute;
+    width: 24px;
+    fill: red; /* Change icon fill to red */
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button-cancel .arr-1-cancel {
+    right: 16px;
+  }
+  
+  .animated-button-cancel .arr-2-cancel {
+    left: -25%;
+  }
+  
+  .animated-button-cancel .circle-cancel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: red; /* Change circle background color to red */
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button-cancel .text-cancel {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button-cancel:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: white; /* Ensure text remains white on hover */
+    border-radius: 12px;
+  }
+  
+  .animated-button-cancel:hover .arr-1-cancel {
+    right: -25%;
+  }
+  
+  .animated-button-cancel:hover .arr-2-cancel {
+    left: 16px;
+  }
+  
+  .animated-button-cancel:hover .text-cancel {
+    transform: translateX(12px);
+  }
+  
+  .animated-button-cancel:hover svg {
+    fill: white; /* Change icon fill to white on hover */
+  }
+  
+  .animated-button-cancel:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px red;
+  }
+  
+  .animated-button-cancel:hover .circle-cancel {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  

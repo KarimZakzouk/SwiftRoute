@@ -1,0 +1,553 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-left: 10px;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2c3e50;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.site-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 10px;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+#button-container {
+    margin-top: 20px;
+}
+
+#button-container ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#button-container li {
+    margin-right: 10px;
+}
+
+#add-driver-btn,
+#update-salary-btn,
+#remove-driver-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #45a049;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 10px;
+    width: auto;
+}
+
+#add-driver-btn:hover,
+#update-salary-btn:hover,
+#remove-driver-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+#button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+}
+
+#add-trip-btn,
+#set-price-btn,
+#set-destination-btn,
+#set-driver-btn,
+#update-destination-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #45a049;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 10px;
+    width: auto;
+}
+
+#add-trip-btn:hover,
+#set-price-btn:hover,
+#set-destination-btn:hover,
+#set-driver-btn:hover,
+#update-destination-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#add-trip-btn .buttonlink {
+    text-decoration: none;
+    color: white;
+}
+
+#selected-row-preview {
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    overflow-x: auto;
+}
+
+#selected-row-preview pre {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin: 0;
+    padding: 5px;
+    color: #34495e;
+}
+
+#selected-row-preview pre code {
+    display: inline;
+    margin-right: 15px;
+}
+
+#new-salary-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.button-list li {
+    margin-right: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-item {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 200px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    flex-direction: column; /* Stack items vertically */
+  align-items: flex-start;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+#accept-btn {
+    background-color: #4CAF50;
+}
+
+#reject-btn {
+    background-color: #f44336;
+}
+
+#accept-btn:hover {
+    background-color: #45a049;
+}
+
+#reject-btn:hover {
+    background-color: #e53935;
+}
+
+#messages-container {
+    text-align: center;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success-message {
+    color: #28a745;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .input-container input {
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    
+  }
+  
+  .input-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .input-container input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+.List {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+#data-grid-container {
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#data-grid {
+  width: 100%;
+}
+
+#selected-row-preview {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+#selected-row-preview h3 {
+  font-size: 18px;
+}
+
+#messages-container {
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
+#button-container {
+  margin-top: 20px;
+}
+
+#button-container ul {
+  gap: 10px;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#button-container .button-item {
+  margin-right: 10px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.buttonlink {
+  color: white;
+  text-decoration: none;
+}
+
+.input-container {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.input-container input {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+
+.input-container input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.status-message {
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.success-status {
+  background-color: #4CAF50;
+}
+
+.error-status {
+  background-color: #f44336;
+}
+
+
+#combobox-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: flex-start;
+}
+
+/* Container Styling for Select Elements */
+#combobox-container select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* General styles for the combobox */
+#styled-combobox {
+  margin-left: 10px;
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for the options */
+  font-size: 16px; /* Text size */
+  color: #333; /* Text color */
+  border: 1px solid #ccc; /* Border around the combobox */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Background color */
+  appearance: none; /* Remove default arrow on modern browsers */
+  -webkit-appearance: none; /* Remove default arrow on Safari */
+  -moz-appearance: none; /* Remove default arrow on Firefox */
+  outline: none; /* Remove outline when focused */
+}
+
+.margin-right10{
+  margin-right: 10px;
+}
+
+/* Styling the dropdown arrow */
+#styled-combobox::after {
+  content: '▼'; /* Custom dropdown arrow */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+  color: #555; /* Arrow color */
+}
+
+/* Styles for when the combobox is focused */
+#styled-combobox:focus {
+  border-color: #007bff; /* Blue border when focused */
+  background-color: #ffffff; /* White background when focused */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow */
+}
+
+/* Additional styling for options */
+#styled-combobox option {
+  padding: 10px; /* Padding inside options */
+  font-size: 16px; /* Font size for options */
+  background-color: #ffffff; /* Option background */
+  color: #333; /* Option text color */
+}
+
+/* Hover effect for options */
+#styled-combobox option:hover {
+  background-color: #e9ecef; /* Hover background color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Dropdown Container */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Button */
+.dropdown-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  width: 100%; /* Ensure dropdown width is consistent */
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  padding: 10px 15px;
+  color: #2c3e50;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  width: 100%; /* Make items span the full width */
+  height: 40px; /* Ensure consistent height for all items */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.dropdown-item:hover {
+  background-color: rgb(52, 152, 219);
+  cursor: pointer;
+}
+
+/* Remove default button styles in dropdown-item */
+.dropdown-item button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  width: 100%;
+  text-align: center; /* Center align text */
+  height: 100%; /* Ensure button takes full height */
+  padding: 0;
+}

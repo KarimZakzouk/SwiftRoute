@@ -1,0 +1,56 @@
+INSERT INTO public."Admin"
+VALUES 
+	(1, 'admin1@example.com', 'John', 'M.', 'Doe', 'password1'),
+    (2, 'admin2@example.com', 'Jane', 'A.', 'Smith', 'password2'),
+    (3, 'admin3@example.com', 'Chris', 'B.', 'Brown', 'password3'),
+    (4, 'admin4@example.com', 'Lisa', 'C.', 'Taylor', 'password4')
+    (5, 'admin5@example.com', 'Mike', 'D.', 'Johnson', 'password5'),
+    (6, 'admin6@example.com', 'Sara', 'E.', 'Lee', 'password6'),
+    (7, 'admin7@example.com', 'Tom', 'F.', 'White', 'password7'),
+    (8, 'admin8@example.com', 'Emma', 'G.', 'Harris', 'password8'),
+    (9, 'admin9@example.com', 'Liam', 'H.', 'Martin', 'password9'),
+    (10, 'admin10@example.com', 'Sophia', 'I.', 'Clark', 'password10'),
+    (11, 'admin11@example.com', 'Noah', 'J.', 'Lewis', 'password11'),
+    (12, 'admin12@example.com', 'Olivia', 'K.', 'Walker', 'password12'),
+    (13, 'admin13@example.com', 'James', 'L.', 'Hall', 'password13'),
+    (14, 'admin14@example.com', 'Ava', 'M.', 'Allen', 'password14');
+
+INSERT INTO public."Manager"
+VALUES 
+    (1, 'manager1@example.com', 'Alex', 'A.', 'Williams', 'password1'),
+    (2, 'manager2@example.com', 'Taylor', 'B.', 'Brown', 'password2'),
+    (3, 'manager3@example.com', 'Jordan', 'C.', 'Miller', 'password3'),
+    (4, 'manager4@example.com', 'Morgan', 'D.', 'Garcia', 'password4'),
+    (5, 'manager5@example.com', 'Casey', 'E.', 'Martinez', 'password5'),
+    (6, 'manager6@example.com', 'Jamie', 'F.', 'Davis', 'password6'),
+    (7, 'manager7@example.com', 'Riley', 'G.', 'Lopez', 'password7'),
+    (8, 'manager8@example.com', 'Drew', 'H.', 'Gonzalez', 'password8'),
+    (9, 'manager9@example.com', 'Jordan', 'I.', 'Wilson', 'password9'),
+    (10, 'manager10@example.com', 'Cameron', 'J.', 'Anderson', 'password10');
+
+INSERT INTO public."Driver"
+VALUES 
+    (1, 'driver1@example.com', 'John', 'A.', 'Doe', 'password1', true, 1),
+    (2, 'driver2@example.com', 'Jane', 'B.', 'Smith', 'password2', false, 2),
+    (3, 'driver3@example.com', 'Chris', 'C.', 'Brown', 'password3', true, 3),
+    (4, 'driver4@example.com', 'Emma', 'D.', 'Taylor', 'password4', false, 4),
+    (5, 'driver5@example.com', 'Liam', 'E.', 'Johnson', 'password5', true, 5),
+    (6, 'driver6@example.com', 'Sophia', 'F.', 'Harris', 'password6', false, 6),
+    (7, 'driver7@example.com', 'Noah', 'G.', 'Walker', 'password7', true, 7),
+    (8, 'driver8@example.com', 'Olivia', 'H.', 'Allen', 'password8', false, 8),
+    (9, 'driver9@example.com', 'James', 'I.', 'Martin', 'password9', true, 9),
+    (10, 'driver10@example.com', 'Ava', 'J.', 'Lewis', 'password10', false, 10);
+
+
+INSERT INTO public."Station"
+VALUES 
+    (1, 'Central Station', 'Main St', '10001', 'Cairo'),
+    (2, 'Downtown Station', 'Market St', '10002', 'Giza'),
+    (3, 'East Station', 'Sunrise Blvd', '10003', 'Alexandria'),
+    (4, 'West Station', 'Highway Ave', '10004', 'Aswan'),
+    (5, 'North Station', 'Palm Rd', '10005', 'Luxor'),
+    (6, 'South Station', 'Valley Rd', '10006', 'Port Said'),
+    (7, 'Old Town Station', 'Heritage Ln', '10007', 'Suez'),
+    (8, 'New City Station', 'Innovation Dr', '10008', 'Ismailia'),
+    (9, 'River Station', 'Dockside Rd', '10009', 'Faiyum'),
+    (10, 'Airport Station', 'Aviation St', '10010', 'Hurghada');
