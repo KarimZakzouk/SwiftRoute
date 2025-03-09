@@ -4,17 +4,15 @@ services:
       context: ./Backend
       dockerfile: Dockerfile
     ports:
-      - "6969:6969"  # Map host port 5969 to container port 5969 (from your app.js)
+      - "6969:6969"
     depends_on:
       - db
     environment:
-      - DATABASE_HOST=db  # Refers to the db service name in Docker Compose
+      - DATABASE_HOST=db
       - DATABASE_USER=postgres
-      - DATABASE_PASSWORD=12345678  # Matches your db.js
+      - DATABASE_PASSWORD=12345678
       - DATABASE_NAME=SwiftRoute
       - DATABASE_PORT=5432
-    volumes:
-      - ./Backend:/app
     networks:
       - app-network
 
@@ -23,9 +21,7 @@ services:
       context: ./Frontend
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"  # Assuming your frontend runs on port 3000 (common for React/Vue/Angular)
-    volumes:
-      - ./Frontend:/app
+      - "3000:3000"
     networks:
       - app-network
 
@@ -33,13 +29,13 @@ services:
     image: postgres:latest
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=12345678  # Matches your db.js
-      - POSTGRES_DB=SwiftRoute  # Matches your db.js
+      - POSTGRES_PASSWORD=12345678
+      - POSTGRES_DB=SwiftRoute
     ports:
       - "5432:5432"
     volumes:
-      - db-data:/var/lib/postgresql/data  # Persist database data
-      - ./Database/DB.sql:/docker-entrypoint-initdb.d/db.sql  # Mount db.sql for initialization
+      - db-data:/var/lib/postgresql/data
+      - ./Database/DB.sql:/docker-entrypoint-initdb.d/db.sql
     networks:
       - app-network
 
